@@ -16,7 +16,7 @@ class auto{
     }
 
 
-        
+    // Funciones     
     getPropietario():string{
         return this.propietario;
     }
@@ -51,8 +51,8 @@ class auto{
 
 }
 
-let miAuto = new auto("VW","GOL POWER","BLANCO");
+let miAuto = new auto('VW','GOL POWER','BLANCO');
 
 let colorAuto : string = miAuto.getColor();
 
-console.log("Color del Auto: "+ colorAuto);
+console.log('Color del Auto: '+ colorAuto);
