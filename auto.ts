@@ -2,11 +2,11 @@ class auto{
 
     //Variables o atributos
 
-    public propietario:string;
-    public modelo:string;
-    public marca:string;
-    public color:string;
-    public ruedaAuxilio: boolean;
+    private propietario:string;
+    private modelo:string;
+    private marca:string;
+    private color:string;
+    private ruedaAuxilio: boolean;
 
     constructor(paramMarca:string, paramModelo:string, paramColor:string ){
         this.marca = paramMarca;
