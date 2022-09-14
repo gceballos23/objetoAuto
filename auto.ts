@@ -1,11 +1,10 @@
-class auto{
+class Auto {
 
     //Variables o atributos
-
-    private propietario:string;
-    private modelo:string;
-    private marca:string;
-    private color:string;
+    private propietario: string;
+    private modelo: string;
+    private marca: string;
+    private color: string;
     private ruedaAuxilio: boolean;
 
     constructor(paramMarca:string, paramModelo:string, paramColor:string ){
@@ -51,8 +50,7 @@ class auto{
 
 }
 
-let miAuto = new auto('VW','GOL POWER','BLANCO');
+var miAuto = new Auto('VW','GOL POWER','BLANCO');
+var colorAuto: string = miAuto.getColor();
 
-let colorAuto : string = miAuto.getColor();
-
-console.log('Color del Auto: '+ colorAuto);
+console.log('Color del Auto: ' + colorAuto);

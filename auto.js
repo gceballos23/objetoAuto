@@ -1,37 +1,37 @@
-var auto = /** @class */ (function () {
-    function auto(paramMarca, paramModelo, paramColor) {
+var Auto = /** @class */ (function () {
+    function Auto(paramMarca, paramModelo, paramColor) {
         this.marca = paramMarca;
         this.modelo = paramModelo;
         this.color = paramColor;
         this.ruedaAuxilio = false;
     }
     // Funciones     
-    auto.prototype.getPropietario = function () {
+    Auto.prototype.getPropietario = function () {
         return this.propietario;
     };
-    auto.prototype.setPropietario = function (paramPropietario) {
+    Auto.prototype.setPropietario = function (paramPropietario) {
         this.propietario = paramPropietario;
     };
-    auto.prototype.getModelo = function () {
+    Auto.prototype.getModelo = function () {
         return this.modelo;
     };
-    auto.prototype.setModelo = function (paramModelo) {
+    Auto.prototype.setModelo = function (paramModelo) {
         this.modelo = paramModelo;
     };
-    auto.prototype.getColor = function () {
+    Auto.prototype.getColor = function () {
         return this.color;
     };
-    auto.prototype.setColor = function (paramColor) {
+    Auto.prototype.setColor = function (paramColor) {
         this.color = paramColor;
     };
-    auto.prototype.getRuedaAuxilio = function () {
+    Auto.prototype.getRuedaAuxilio = function () {
         return this.ruedaAuxilio;
     };
-    auto.prototype.setRuedaAuxilio = function () {
+    Auto.prototype.setRuedaAuxilio = function () {
         this.ruedaAuxilio = !this.ruedaAuxilio;
     };
-    return auto;
+    return Auto;
 }());
-var miAuto = new auto('VW', 'GOL POWER', 'BLANCO');
+var miAuto = new Auto('VW', 'GOL POWER', 'BLANCO');
 var colorAuto = miAuto.getColor();
 console.log('Color del Auto: ' + colorAuto);
